@@ -133,7 +133,7 @@
                         <div class="card-body d-flex align-items-center justify-content-center">
                             <div>
                                 <h5 class="card-title">Add New Task</h5>
-                                <a href="#" class="btn btn-primary btn-white"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="btn btn-primary btn-white" data-toggle="modal" data-target="#Insert-Modal"><i class="fas fa-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -168,6 +168,88 @@
         </div>
 
     </footer>
+
+
+                <!-- Modal To Display On Page -->
+                    <!-- Modal Start -->
+    <div class="modal fade" id="Insert-Modal" tabindex="-1" role="dialog" aia-label="InsertModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="InsertModalLabel">Add New Task</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+                    <!-- Form Start -->
+            <div class="form-2-box wow fadeInUp">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="InputName">Name</label>
+                            <input type="text" name="InputName" class="form-control" id="InputName" placeholder="User Name">
+                        </div>
+                        <fieldset class="form-group border p-3">
+                            <legend class="w-auto px-2">Description:</legend>
+                            <div class="form-group">
+                                <label for="userAge">Age:</label>
+                                <input type="number" class="form-control" name="userAge" id="userAge" placeholder="e.g 20" min="15" max="70">
+                            </div>
+                            <div class="form-group input-group">
+                                <label for="userWeight">Weight:</label>
+                                <input type="number" class="form-control" name="userWeight" id="userWeight" placeholder="e.g 80" min="30" max="200">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">kg</span>
+                                </div>
+                                <small>Note: your weight counted in kilograms</small>
+                            </div>
+                            <div class="form-group input-group">
+                                <label for="userHeight">Height:</label>
+                                <input type="number" class="form-control" name="userHeight" id="userHeight" placeholder="e.g 20" min="15" max="70">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">cm</span>
+                                </div>
+                                <small>Note: Your height measured in cm</small>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Gender:</label>
+                                <div class="form-check-inline">
+                                    <label for="radioOpt1" class="form-check-label ml-2"><input type="radio" name="userGender" class="form-check-input" id="radioOpt1" value="male">Male</label>
+                                    <label for="radioOpt2" class="form-check-label ml-2"><input type="radio" name="userGender" class="form-check-input" id="radioOpt2" value="female">Female</label>
+                                    <label for="radioOpt3" class="form-check-label ml-2"><input type="radio" name="userGender" class="form-check-input" id="radioOpt3" value="other">Others</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-group">
+                            <label for="userTasks">Ideal city to visit?</label>
+                                <input type="text" list="taskList" id="userTasks" name="userTasks">
+                            
+                                <datalist id="taskList">
+                                    <option value="Running"></option>
+                                    <option value="Cycling"></option>
+                                    <option value="Swimming"></option>
+                                </datalist>
+                        </div>
+                        <div class="form-group">
+                            <label for="ExerciseDuration">Duration:</label>
+                            <input type="range" class="form-control" name="ExerciseDuration" id="ExerciseDuration" value="30" min="10" max="120">
+                        </div>
+                        <div class="form-group">
+                            <label for="ExerciseDate">Date:</label>
+                            <input type="datetime" class="form-control" name="ExerciseDate" id="ExerciseDate">
+                        </div>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" name="InsertProduct" class="btn btn-primary">Submit</button>
+                </div>
+                </form>
+            </div>
+                    <!-- Form end -->
+            </div>
+        </div>
+    </div>
+                    <!-- Insert Modal end -->
     <!-- scripts -->
     <script src="https://kit.fontawesome.com/101f6b4938.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
