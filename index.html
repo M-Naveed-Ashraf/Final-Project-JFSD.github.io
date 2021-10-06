@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site developed by Ali, Haseeb and Naveed">
+
+    <!-- Code authors @haz-ro @codesuhan93 @M-Naveed-Ashraf  -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <!-- google font library -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'> 
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Title -->
+    <title>Exercise Tracker</title>
+</head>
+
+<body> 
+    <header>
+        <div class="head-container">
+            <nav class="navbar navbar-light row no-gutters">
+                <div class="col-12 col-md-2 align-self-center text-center ml-md-0 ml-3">
+                    <a href="#" class="navbar-brand">
+                        <h1>fitin'fit</h1>
+                    </a>
+                </div>
+                <div class="col-12 col-md-10 align-self-center mt-md-0 mt-3">
+                    <div class="navbar-wrapper d-flex align-self-center justify-content-md-end justify-content-center">
+                        <ul class="nav-menu text-right mb-0 p-0 d-flex align-self-center justify-content-end">
+                            <li class="nav-item">
+                                <a href="#" class="item-link "><span class="d-none d-md-inline-block">Home</span><i class="fas fa-home d-inline-block d-md-none"></i></a>
+                                <!-- <a href="#" class=""></a>  update next three items accordingly -->
+                            </li>
+                            <li>
+                                <a href="#" class="d-none d-md-inline-block">Dashboard</a>
+                                <a href="" class="d-inline-block d-md-none"><i class="fas fa-th-large"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-none d-md-inline-block">About Us</a>
+                                <a href="" class="d-inline-block d-md-none"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-none d-md-inline-block">Contact Us</a>
+                                <a href="" class="d-inline-block d-md-none"><i class="fas fa-paper-plane"></i></a>
+                            </li>
+                            <li class="d-inline-block d-md-none">
+                                <a href="#"><i class="fas fa-user"></i></a>
+                            </li>
+                        </ul>
+                        <div class="profile-thumb ml-2 d-none d-md-block"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="row no-gutters">            
+        <!-- Sidebar -->
+        <div class="col-sm-4 col-md-3 col-xl-2 nav-height">            <!-- main column 1 -->
+            <aside>
+                <nav class="navbar navbar-expand-sm navbar-light bg-light mt-3">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideDashboard" aria-controls="sideDashboard" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="sideDashboard">
+                        <ul class="navbar-nav mr-auto flex-column">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Dashboard</a>
+                            </li>
+                            <li><a href="#" class="nav-link">Tasks</a></li>
+                                <ul>
+                                    
+                                    <li><a href="">Running</a></li>
+                                    <li><a href="">Cycling</a></li>
+                                    <li><a href="">Swimming</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Add New Task</a>
+                            </li>
+                        </ul>
+                      </div>
+                </nav>
+            </aside>
+        </div>
+    <!-- /Siderbar -->
+
+    <!-- Main Body -->
+        <main class="col-sm-8 col-md-9 col-xl-8 mx-auto">       <!-- main column 2-->
+            <div class="row no-gutters justify-content-around align-items-center">              
+                <!-- Running -->
+                <section class="col-12 col-md-6">
+                    <div class="card text-center my-3 ml-3 mr-md-0 mr-3 laycard">
+                        <div class="card-body">
+                        <h5 class="card-title">Running</h5>
+                        <p class="card-text">Duration: 30 minutes</p>
+                        <p class="card-text">Date: 01-10-2021</p>
+                        <a href="#" class="btn btn-primary btn-white">edit activity</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Cycling -->
+                <section class="col-12 col-md-6">
+                    <div class="card text-center my-3 mx-3 laycard">
+                        <div class="card-body">
+                        <h5 class="card-title">Cycling</h5>
+                        <p class="card-text">Duration: 15 minutes</p>
+                        <p class="card-text">Date: 03-10-2021</p>
+                        <a href="#" class="btn btn-primary btn-white">edit activity</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="row no-gutters justify-content-center align-items-center">
+                <!-- Cards -->
+                <section class="col-12 col-md-6">
+                    <div class="card text-center mb-3 ml-3 mr-md-0 mr-3 laycard">
+                        <div class="card-body">
+                        <h5 class="card-title">Swimming</h5>
+                        <p class="card-text">Duration: 40 minutes</p>
+                        <p class="card-text">Date: 28-09-2021</p>
+                        <a href="#" class="btn btn-primary btn-white">edit activity</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Cards -->
+                <section class="col-12 col-md-6">
+                    <div class="card text-center mb-3 mx-3 laycard">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <div>
+                                <h5 class="card-title">Add New Task</h5>
+                                <a href="#" class="btn btn-primary btn-white"><i class="fas fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    <!-- /Main Body -->
+    </div>
+     <!-- Footer section -->
+     <footer id="footer">
+
+        <div class="container">
+
+            <div class="row d-flex flex-column align-items-center">
+
+                <div class="footer-logo">
+                    <h3>fitin'fit</h3>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="copyright text-center">
+                    <p>&copyCopyright 2021</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- scripts -->
+    <script src="https://kit.fontawesome.com/101f6b4938.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft   +2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
