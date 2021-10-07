@@ -195,21 +195,25 @@
                                 <label for="userAge">Age:</label>
                                 <input type="number" class="form-control" name="userAge" id="userAge" placeholder="e.g 20" min="15" max="70">
                             </div>
-                            <div class="form-group input-group">
+                            <div class="form-group">
                                 <label for="userWeight">Weight:</label>
-                                <input type="number" class="form-control" name="userWeight" id="userWeight" placeholder="e.g 80" min="30" max="200">
-                                <div class="input-group-append">
-                                    <span class="input-group-text">kg</span>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" name="userWeight" id="userWeight" aria-describedby="weightHelp" placeholder="e.g 80" min="30" max="200">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">kg</span>
+                                    </div>
                                 </div>
-                                <small>Note: your weight counted in kilograms</small>
+                                <small class="weightHelp d-block">Note: your weight counted in kilograms</small>
                             </div>
-                            <div class="form-group input-group">
+                            <div class="form-group">
                                 <label for="userHeight">Height:</label>
-                                <input type="number" class="form-control" name="userHeight" id="userHeight" placeholder="e.g 20" min="15" max="70">
-                                <div class="input-group-append">
-                                    <span class="input-group-text">cm</span>
+                                <div class=" input-group">
+                                    <input type="number" class="form-control" name="userHeight" id="userHeight" aria-describedby="heighttHelp" placeholder="e.g 20" min="15" max="70">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">cm</span>
+                                    </div>
                                 </div>
-                                <small>Note: Your height measured in cm</small>
+                                <small class="weightHelp d-block">Note: Your height measured in cm</small>
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Gender:</label>
@@ -221,22 +225,30 @@
                             </div>
                         </fieldset>
                         <div class="form-group">
-                            <label for="userTasks">Ideal city to visit?</label>
-                                <input type="text" list="taskList" id="userTasks" name="userTasks">
+                            <label for="userTasks">Choose your Task</label>
+                                <input type="text" list="taskList" id="userTasks" name="userTasks" placeholder="e.g Running">
                             
                                 <datalist id="taskList">
-                                    <option value="Running"></option>
-                                    <option value="Cycling"></option>
-                                    <option value="Swimming"></option>
+                                    <option value="Running">Running</option>
+                                    <option value="Cycling">Cycling</option>
+                                    <option value="Swimming">Swimming</option>
                                 </datalist>
                         </div>
-                        <div class="form-group">
-                            <label for="ExerciseDuration">Duration:</label>
-                            <input type="range" class="form-control" name="ExerciseDuration" id="ExerciseDuration" value="30" min="10" max="120">
+                        <div class="form-group row" >
+                            <!-- <label for="ExerciseDuration">Duration:</label>
+                            <input type="range" class="form-control" name="ExerciseDuration" id="ExerciseDuration" value="30" min="10" max="120"> -->
+                            <div class="col-sm-2"><label for="ExerciseDuration">Duration:</label></div>
+                            <div class="col-sm-6 align-self-center"><input type="range" class="form-control-range" name="range" step="5" min="10" max="120" value="30" onchange="ExerciseDuration.value=value"></div>
+                            <div class="input-group col-sm-4">
+                                <input type="text" class="form-control" name="ExerciseDuration" id="ExerciseDuration" placeholder="30">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">min</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="ExerciseDate">Date:</label>
-                            <input type="datetime" class="form-control" name="ExerciseDate" id="ExerciseDate">
+                            <input type="date" class="form-control" name="ExerciseDate" id="ExerciseDate">
                         </div>
                     </div>
                 <div class="modal-footer">
