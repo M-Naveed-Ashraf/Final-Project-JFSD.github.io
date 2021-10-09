@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon8 icons cdn -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- MorrisJs charts stylesheeet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Fitin'fit</title>
+</head>
+<body>
+    <input type="checkbox" name="hiddenToggleCheckBox" id="hiddenToggleCheckBox">
+    <div class="sidebar">
+        <div class="brand">
+            <span class="lab la-affiliatetheme"></span>
+            <h2>Fitin'fit</h2>
+            <div>
+                <label class="closebtn" for="hiddenToggleCheckBox" >
+                    <span class="las la-times"></span>
+                </label>
+            </div>
+        </div>
+        <div class="sidemenu">
+            <div class="side-user">
+                <div class="side-img"></div>
+                <div class="user">
+                    <small>Trainer</small>
+                    <p>Let's Start Training</p>
+                </div>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="" class="active">
+                        <span class="las la-home"></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-tasks"></span>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-history"></span>
+                        <span>History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-cog"></span>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <label for="hiddenToggleCheckBox" class="menu-toggle">
+                <span class="las la-bars"></span>
+            </label>
+            <div class="search">
+                <span class="las la-search"></span>
+                <input type="search" name="search" id="search" placeholder="Enter Keyword">
+            </div>
+            <div class="head-icons">
+                <span class="las la-bell"></span>
+                <span class="las la-bookmark"></span>
+                <span class="las la-comment"></span>
+            </div>
+        </header>
+        <main>
+            <div class="addtask">
+                <div class="row w-100 justify-content-center" style="margin-bottom: 10px;">
+                    <h3 class="text-white"><q>What seems impossible today will one day become your warm-up</q></h3> 
+                </div>
+                <button class="addnewtaskbtn btn">Add New Task</button>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon ongoing">
+                        <span class="las la-dumbbell"></span>
+                    </div>
+                    <div class="card-info">
+                        <h2>Ongoing</h2>
+                        <small>Tasks</small>
+                        <div class="edit-button">
+                            <span class="las la-edit"></span>  
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <span class="las la-dumbbell"></span>
+                    </div>
+                    <div class="card-info">
+                        <h2>Ongoing</h2>
+                        <small>Tasks</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <span class="las la-dumbbell"></span>
+                    </div>
+                    <div class="card-info">
+                        <h2>Ongoing</h2>
+                        <small>Tasks</small>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-grid">
+                <div class="main-chart">
+                    <div class="chart-head">
+                        <h3>Weekly progress</h3>
+                        <span class="las la-cog"></span>
+                    </div>
+                    <div id="myfirstchart" style="height: 350px;"></div>
+                </div>
+                <div class="progress-donut">
+                    <div class="chart-head">
+                        <h3>Completed Tasks</h3>
+                    </div>
+                    <div class="progress-donut" style="height: 350px;"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+                    <!-- Morris Js charts scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    
+                    <!-- custom Charts js -->
+    <script src="./assets/js/chart.js"></script>
+</body>
+</html>
