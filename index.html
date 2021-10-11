@@ -18,7 +18,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 
     <!-- custom stylesheet -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Fitin'fit</title>
 </head>
 <body>
@@ -44,7 +44,7 @@
 
             <ul>
                 <li>
-                    <a href="" class="active">
+                    <a href="./index.html" class="active">
                         <span class="las la-home"></span>
                         <span>Dashboard</span>
                     </a>
@@ -65,6 +65,12 @@
                     <a href="">
                         <span class="las la-cog"></span>
                         <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html">
+                        <span class="las la-user-plus"></span>
+                        <span>login/sign up</span>
                     </a>
                 </li>
             </ul>
@@ -90,7 +96,7 @@
                 <div class="row w-100 justify-content-center" style="margin-bottom: 10px;">
                     <h3 class="text-white"><q>What seems impossible today will one day become your warm-up</q></h3> 
                 </div>
-                <button class="addnewtaskbtn btn">Add New Task</button>
+                <a class="text-decoration-none" href="./new-task.html"><button class="addnewtaskbtn btn">Add New Task</button></a>
             </div>
             <div class="cards">
                 <div class="card">
@@ -162,8 +168,8 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="InsertModalLabel">Add New Task</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                <h3 class="modal-title" id="InsertModalLabel">Add New Task</h3>
+                <button type="button" class="close text-white" data-dismiss="modal" aria-label="close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -212,11 +218,13 @@
                         </fieldset>
                         <div class="form-group">
                             <label for="userTasks">Choose your Task</label>
-                                <select id="taskList">
+                                <select id="taskList" class="form-control">
+                                    <option value="">Please Select</option>
                                     <option value="Running">Running</option>
                                     <option value="Running">Walking</option>
                                     <option value="Cycling">Cycling</option>
                                     <option value="Swimming">Swimming</option>
+                                    <option value="Hicking">Hicking</option>
                                 </select>
                         </div>
                         <div class="form-group row" >
@@ -238,7 +246,7 @@
                     </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" name="InsertProduct" class="btn btn-primary">Submit</button>
+                    <button type="submit" name="InsertProduct" class="btn submit-btn">Submit</button>
                 </div>
                 </form>
             </div>
